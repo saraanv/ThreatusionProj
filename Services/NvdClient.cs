@@ -25,7 +25,7 @@ public class NvdClient
 
         using var request = new HttpRequestMessage(
             HttpMethod.Get,
-            "cves/2.0?resultsPerPage=5");
+            "cves/2.0?pubStartDate=2026-11-01T00:00:00.000&pubEndDate=2026-11-23T23:59:59.999&resultsPerPage=5");
 
         request.Headers.Add("apiKey", apiKey);
 
